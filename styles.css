@@ -132,16 +132,21 @@ header {
   margin: 0 20px;
 }
 
-#navbar a {
+#navbar ul li a,
+#navbar ul li a:link,
+#navbar ul li a:visited,
+#navbar ul li a:hover,
+#navbar ul li a:active {
   color: var(--text-color);
+  text-decoration: none !important;
   font-weight: 600;
   padding: 8px 15px;
   border-radius: 25px;
   transition: var(--transition);
 }
 
-#navbar a.active,
-#navbar a:hover {
+#navbar ul li a.active,
+#navbar ul li a:hover {
   background-color: var(--primary-color);
   color: var(--light-color);
 }
@@ -452,6 +457,7 @@ header {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
 .league-info li strong {
@@ -681,20 +687,29 @@ footer {
 
   .table-content {
     flex-direction: column;
-    text-align: center;
     padding: 0 20px;
   }
 
   .table-text {
     max-width: 100%;
+    text-align: left;
+  }
+
+  .table-text ul {
+    text-align: left;
   }
 
   .table-text ul li {
-    padding-left: 0;
+    padding-left: 30px;
+    text-align: left;
   }
 
   .table-text ul li:before {
-    display: none;
+    display: block;
+    content: "✓";
+    color: var(--dark-color);
+    position: absolute;
+    left: 0;
   }
 
   .table-image {
@@ -703,6 +718,26 @@ footer {
 
   .contact-map {
     height: 300px;
+  }
+
+  .leagues-content {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .league-info {
+    padding: 20px;
+  }
+
+  .league-info li {
+    padding: 15px;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .league-info ul {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -792,4 +827,9 @@ footer {
 
 .close-popup:hover {
   color: var(--primary-color);
+}
+
+/* Remove underlines from all links */
+a {
+  text-decoration: none;
 }
