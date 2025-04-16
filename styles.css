@@ -278,6 +278,13 @@ header {
   padding: 20px;
   background-color: var(--gray-color);
   border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.table-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .table-content {
@@ -406,7 +413,7 @@ header {
 }
 
 .league-info {
-  background-color: var(--light-color);
+  background-color: var(--gray-color);
   padding: 30px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
@@ -458,7 +465,7 @@ header {
 }
 
 .menu-section-card {
-  background-color: white;
+  background-color: var(--gray-color);
   padding: 10px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
@@ -474,6 +481,19 @@ header {
   overflow: hidden;
   height: auto;
   border: 1px solid rgba(173, 216, 230, 0.5);
+}
+
+.menu-section-card:nth-of-type(1),
+.menu-section-card:nth-of-type(2),
+.menu-section-card:nth-of-type(3),
+.menu-section-card:nth-of-type(4),
+.menu-section-card:nth-of-type(5),
+.menu-section-card:nth-of-type(6),
+.menu-section-card:nth-of-type(7),
+.menu-section-card:nth-of-type(8),
+.menu-section-card:nth-of-type(9),
+.menu-section-card:nth-of-type(10) {
+  background-color: var(--gray-color);
 }
 
 .menu-section-header {
@@ -509,46 +529,6 @@ header {
   opacity: 1;
   transform: translateY(0);
   margin-top: 20px;
-}
-
-.menu-section-card:nth-of-type(1) {
-  background-color: rgba(173, 216, 230, 0.15);
-}
-
-.menu-section-card:nth-of-type(2) {
-  background-color: rgba(173, 216, 230, 0.15);
-}
-
-.menu-section-card:nth-of-type(3) {
-  background-color: rgba(173, 216, 230, 0.15);
-}
-
-.menu-section-card:nth-of-type(4) {
-  background-color: rgba(173, 216, 230, 0.15);
-}
-
-.menu-section-card:nth-of-type(5) {
-  background-color: rgba(173, 216, 230, 0.15);
-}
-
-.menu-section-card:nth-of-type(6) {
-  background-color: rgba(173, 216, 230, 0.15);
-}
-
-.menu-section-card:nth-of-type(7) {
-  background-color: rgba(173, 216, 230, 0.15);
-}
-
-.menu-section-card:nth-of-type(8) {
-  background-color: rgba(173, 216, 230, 0.15);
-}
-
-.menu-section-card:nth-of-type(9) {
-  background-color: rgba(173, 216, 230, 0.15);
-}
-
-.menu-section-card:nth-of-type(10) {
-  background-color: rgba(173, 216, 230, 0.15);
 }
 
 .menu-section-card:hover {
