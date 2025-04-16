@@ -31,25 +31,143 @@
       </div>
     </header>
 
-    <section class="menu">
+    <section class="menu" id="menu">
       <div class="container">
         <h2>Our Menu</h2>
+
         <div class="menu-grid">
-          <div class="menu-category">
-            <h3>Drinks</h3>
-            <ul>
-              <li>Beer & Wine</li>
-              <li>Craft Cocktails</li>
-              <li>Non-Alcoholic Options</li>
-            </ul>
+          <div class="menu-section-card" data-section="breakfast">
+            <div class="menu-section-header">
+              <h3>Breakfast</h3>
+            </div>
+            <div class="menu-section-content">
+              <p class="section-note">Served All Day</p>
+              <div class="menu-items">
+                <!-- Content will be loaded dynamically -->
+              </div>
+            </div>
           </div>
-          <div class="menu-category">
-            <h3>Food</h3>
-            <ul>
-              <li>Bar Snacks</li>
-              <li>Burgers & Sandwiches</li>
-              <li>Daily Specials</li>
-            </ul>
+
+          <div class="menu-section-card" data-section="appetizers">
+            <div class="menu-section-header">
+              <h3>Appetizers</h3>
+            </div>
+            <div class="menu-section-content">
+              <p class="section-note">
+                Choice of Honey Mustard, Ketchup, Hot Sauce
+              </p>
+              <div class="menu-items">
+                <!-- Content will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-section-card" data-section="burgers">
+            <div class="menu-section-header">
+              <h3>Carom Burgers</h3>
+            </div>
+            <div class="menu-section-content">
+              <p class="section-note">Made from 100% USDA Ground Beef</p>
+              <div class="menu-items">
+                <!-- Content will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-section-card" data-section="sandwiches">
+            <div class="menu-section-header">
+              <h3>Deli Sandwiches</h3>
+            </div>
+            <div class="menu-section-content">
+              <p class="section-note">Hero additional $1</p>
+              <div class="menu-items">
+                <!-- Content will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-section-card" data-section="korean">
+            <div class="menu-section-header">
+              <h3>Korean Food</h3>
+            </div>
+            <div class="menu-section-content">
+              <div class="menu-items">
+                <!-- Content will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-section-card" data-section="entrees">
+            <div class="menu-section-header">
+              <h3>Entrees</h3>
+            </div>
+            <div class="menu-section-content">
+              <div class="menu-items">
+                <!-- Content will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-section-card" data-section="noodles">
+            <div class="menu-section-header">
+              <h3>Noodles & Soups</h3>
+            </div>
+            <div class="menu-section-content">
+              <div class="menu-items">
+                <!-- Content will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-section-card" data-section="pizza">
+            <div class="menu-section-header">
+              <h3>Pizza</h3>
+            </div>
+            <div class="menu-section-content">
+              <p class="section-note">
+                ADD TOPPINGS FOR $1 EACH<br />Extra Cheese, Onions, Ham, Bacon,
+                Jalapeños, Sausage
+              </p>
+              <div class="menu-items">
+                <!-- Content will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-section-card" data-section="beverages">
+            <div class="menu-section-header">
+              <h3>Beverages</h3>
+            </div>
+            <div class="menu-section-content">
+              <div class="menu-items">
+                <!-- Content will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-section-card" data-section="beer">
+            <div class="menu-section-header">
+              <h3>Beer</h3>
+            </div>
+            <div class="menu-section-content">
+              <div class="menu-items">
+                <!-- Content will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Modals -->
+      <div id="menuModal" class="menu-modal">
+        <div class="menu-modal-content">
+          <div class="modal-header">
+            <button class="modal-nav prev">&larr;</button>
+            <h3 id="modalTitle"></h3>
+            <button class="modal-nav next">&rarr;</button>
+          </div>
+          <div id="modalContent" class="menu-items">
+            <!-- Content will be loaded dynamically -->
           </div>
         </div>
       </div>
@@ -73,7 +191,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 Carom Cafe Billiards. All rights reserved.</p>
+          <p>&copy; 2025 Carom Cafe Billiards. All rights reserved.</p>
         </div>
       </div>
     </footer>
