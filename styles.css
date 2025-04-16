@@ -325,8 +325,8 @@ header {
 
 /* Tables sections with grey background */
 .tables-summary-wrapper,
-.carom-tables,
-.ping-pong-tables {
+.pool-tables,
+.snooker-tables {
   background-color: var(--gray-color);
   width: 100vw;
   margin-left: -50vw;
